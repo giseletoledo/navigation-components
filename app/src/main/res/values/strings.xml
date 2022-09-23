@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Jokenpo</string>
+    <string name="button_title">Iniciar</string>
+    <string name="fragment_home_title">Home</string>
+    <string name="fragment_player_title">Jogador</string>
+    <string name="fragment_result_title">Resultado</string>
+    <string name="menu_settings_title">Reiniciar</string>
+    <string name="bottom_nav_title_1">Jogador</string>
+    <string name="bottom_nav_title_2">Resultado</string>
+</resources>
