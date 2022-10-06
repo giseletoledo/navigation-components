@@ -2,6 +2,7 @@ package com.ebac.jokenpo
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.NavController
@@ -25,6 +26,8 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        Log.d("LifeCycle","onCreate")
 
         val binding = ActivityMainBinding.inflate(layoutInflater)
         val toolbar = binding.toolbar
@@ -52,6 +55,29 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
         navDrawer.setupWithNavController(navController)
         bottomNav.setupWithNavController(navController)
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        Log.d("LifeCycle", "onSaveInstance")
+    }
+
+    override fun onResume() {
+        super.onResume()
+
+        Log.d("LifeCycle", "onResume")
+    }
+
+    override fun onStop() {
+        super.onStop()
+
+        Log.d("LifeCycle", "onStop")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+
+        Log.d("Lifecycle", "onDestroy")
     }
 
     override fun onSupportNavigateUp(): Boolean {
