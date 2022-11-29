@@ -2,9 +2,17 @@
     <string name="app_name">Jokenpo</string>
     <string name="button_title">Iniciar</string>
     <string name="fragment_home_title">Home</string>
-    <string name="fragment_player_title">Jogador</string>
     <string name="fragment_result_title">Resultado</string>
     <string name="menu_settings_title">Reiniciar</string>
     <string name="bottom_nav_title_1">Jogador</string>
     <string name="bottom_nav_title_2">Resultado</string>
+    <string name="welcome_text">Bem vindo ao jokenpô</string>
+    <string name="player_name">Jogador 1</string>
+    <string name="select_move">Selecione a jogada</string>
+
+    <string-array name="available_players_array">
+        <item>Papel</item>
+        <item>Tesoura</item>
+        <item>Pedra</item>
+    </string-array>
 </resources>
