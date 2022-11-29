@@ -81,7 +81,7 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
             true
         }
     }
-//teste
+
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
         Log.d("LifeCycle", "onSaveInstance")
